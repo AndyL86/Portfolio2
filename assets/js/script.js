@@ -47,7 +47,6 @@ function compareChoices(userChoice, compChoice) {
       alert(`Match is a Tie!`);
       return;
     }
-}
 
     if (userChoice === "Rock") {
         if (compChoice === "Scissors") {
@@ -58,3 +57,96 @@ function compareChoices(userChoice, compChoice) {
           compWins++;
         }
     }
+
+    else if (userChoice === "Paper") {
+        if (compChoice === "Rock") {
+          alert(`You Win!`);
+          userWins++;
+        } else {
+          alert(`You Lose!`);
+          compWins++;
+        }
+      }
+
+      else if (userChoice === "Scissors") {
+        if (compChoice === "Paper") {
+          alert(`You Win!`);
+          userWins++;
+        } else {
+          alert(`You Lose!`);
+          compWins++;
+        }
+      }
+
+      else if (userChoice === "Rock") {
+        if (compChoice === "Lizard") {
+          alert(`You Win!`);
+          userWins++;
+        } else {
+          alert(`You Lose!`);
+          compWins++;
+        }
+      }
+
+      else if (userChoice === "Lizard") {
+        if (compChoice === "Spock") {
+          alert(`You Win!`);
+          userWins++;
+        } else {
+          alert(`You Lose!`);
+          compWins++;
+        }
+      }
+
+      else if (userChoice === "Spock") {
+        if (compChoice === "Scissors") {
+          alert(`You Win!`);
+          userWins++;
+        } else {
+          alert(`You Lose!`);
+          compWins++;
+        }
+      }
+
+      else if (userChoice === "Scissors") {
+        if (compChoice === "Lizard") {
+          alert(`You Win!`);
+          userWins++;
+        } else {
+          alert(`You Lose!`);
+          compWins++;
+        }
+      }
+
+      else if (userChoice === "Lizard") {
+        if (compChoice === "Paper") {
+          alert(`You Win!`);
+          userWins++;
+        } else {
+          alert(`You Lose!`);
+          compWins++;
+        }
+      }
+
+      else if (userChoice === "Paper") {
+        if (compChoice === "Spock") {
+          alert(`You Win!`);
+          userWins++;
+        } else {
+          alert(`You Lose!`);
+          compWins++;
+        }
+      }
+
+      else if (userChoice === "Spock") {
+        if (compChoice === "Rock") {
+          alert(`You Win!`);
+          userWins++;
+        } else {
+          alert(`You Lose!`);
+          compWins++;
+        }
+      }
+    }
+
+
