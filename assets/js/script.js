@@ -25,10 +25,11 @@ for (let button of buttons) {
  * The main game function 
  */
 function playGame(userChoice) {
+
     userImage.src = 'assets/images/${options[userChoice]}.png';
     userImage.alt = options[userChoice];
 
-    let compChoice = Math.floor(Math.random() * 5);
+    let compChoice = options[Math.floor(Math.random() * 5)];
 
     compImage.src = 'assets/images/${options[compChoice]}.png';
     compImage.alt = options[compChoice];
@@ -46,10 +47,11 @@ function compareChoices(userChoice, compChoice) {
     if (userChoice === compChoice) {
       alert(`Match is a Tie!`);
       return;
+      updateScore();
     }
 
-    if (userChoice === "Rock") {
-        if (compChoice === "Scissors") {
+    if (userChoice === "rock") {
+        if (compChoice === "scissors") {
           alert(`You Win!`);
           userWins++;
         } else {
@@ -58,8 +60,8 @@ function compareChoices(userChoice, compChoice) {
         }
     }
 
-    else if (userChoice === "Paper") {
-        if (compChoice === "Rock") {
+    else if (userChoice === "paper") {
+        if (compChoice === "rock") {
           alert(`You Win!`);
           userWins++;
         } else {
@@ -68,8 +70,8 @@ function compareChoices(userChoice, compChoice) {
         }
       }
 
-      else if (userChoice === "Scissors") {
-        if (compChoice === "Paper") {
+      else if (userChoice === "scissors") {
+        if (compChoice === "paper") {
           alert(`You Win!`);
           userWins++;
         } else {
@@ -78,8 +80,8 @@ function compareChoices(userChoice, compChoice) {
         }
       }
 
-      else if (userChoice === "Rock") {
-        if (compChoice === "Lizard") {
+      else if (userChoice === "rock") {
+        if (compChoice === "lizard") {
           alert(`You Win!`);
           userWins++;
         } else {
@@ -88,8 +90,8 @@ function compareChoices(userChoice, compChoice) {
         }
       }
 
-      else if (userChoice === "Lizard") {
-        if (compChoice === "Spock") {
+      else if (userChoice === "lizard") {
+        if (compChoice === "spock") {
           alert(`You Win!`);
           userWins++;
         } else {
@@ -98,8 +100,8 @@ function compareChoices(userChoice, compChoice) {
         }
       }
 
-      else if (userChoice === "Spock") {
-        if (compChoice === "Scissors") {
+      else if (userChoice === "spock") {
+        if (compChoice === "scissors") {
           alert(`You Win!`);
           userWins++;
         } else {
@@ -108,8 +110,8 @@ function compareChoices(userChoice, compChoice) {
         }
       }
 
-      else if (userChoice === "Scissors") {
-        if (compChoice === "Lizard") {
+      else if (userChoice === "scissors") {
+        if (compChoice === "lizard") {
           alert(`You Win!`);
           userWins++;
         } else {
@@ -118,8 +120,8 @@ function compareChoices(userChoice, compChoice) {
         }
       }
 
-      else if (userChoice === "Lizard") {
-        if (compChoice === "Paper") {
+      else if (userChoice === "lizard") {
+        if (compChoice === "paper") {
           alert(`You Win!`);
           userWins++;
         } else {
@@ -128,8 +130,8 @@ function compareChoices(userChoice, compChoice) {
         }
       }
 
-      else if (userChoice === "Paper") {
-        if (compChoice === "Spock") {
+      else if (userChoice === "paper") {
+        if (compChoice === "spock") {
           alert(`You Win!`);
           userWins++;
         } else {
@@ -138,8 +140,8 @@ function compareChoices(userChoice, compChoice) {
         }
       }
 
-      else if (userChoice === "Spock") {
-        if (compChoice === "Rock") {
+      else if (userChoice === "spock") {
+        if (compChoice === "rock") {
           alert(`You Win!`);
           userWins++;
         } else {
@@ -149,4 +151,19 @@ function compareChoices(userChoice, compChoice) {
       }
     }
 
+function updateScore() {
+  document.getElementById("user-score").textContent = userWins;
+  document.getElementById("comp-score").textContent = compWins;
+}
 
+function checkWinner() {
+  if (userWins === 5 || compWins === 5) {
+    const winner =
+    userWins === 5
+    ? "Congratulations! You won!"
+    : "Sorry you lose! Better luck next time!";
+    alert(winner);
+    return true;
+  }
+  return false;
+}
