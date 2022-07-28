@@ -7,8 +7,8 @@ const userWins = document.getElementById("user-score");
 const compWins = document.getElementById("comp-score");
 const userImage = document.getElementById("user-image");
 const compImage = document.getElementById("comp-image");
-const alerts = document.getElementById("alert");
-const options = ["rock", "paper", "scissors", "lizard", "spock"];
+const alert = document.getElementById("alert");
+let options = ["rock", "paper", "scissors", "lizard", "spock"];
 
 
 /**
@@ -29,14 +29,14 @@ function playGame(userChoice) {
     userImage.src = 'assets/images/${options[userChoice]}.png';
     userImage.alt = options[userChoice];
 
-    let compChoice = options[Math.floor(Math.random() * 5)];
+    let compChoice = Math.floor(Math.random() * 5);
 
     compImage.src = 'assets/images/${options[compChoice]}.png';
     compImage.alt = options[compChoice];
 
-    let result = checkWinner (options[compChoice], options[userChoice]);
+    let result = checkWinner(options[compChoice], options[userChoice]);
 
-    updateResults(result);
+    updateScore(result);
 }
 
 /**
@@ -48,6 +48,10 @@ function compareChoices(userChoice, compChoice) {
       alert(`Match is a Tie!`);
       return;
       updateScore();
+      if (checkWinner()) {
+        userWins = compWins = 0;
+        updateScore();
+      }
     }
 
     if (userChoice === "rock") {
@@ -152,8 +156,8 @@ function compareChoices(userChoice, compChoice) {
     }
 
 function updateScore() {
-  document.getElementById("user-score").textContent = userWins;
-  document.getElementById("comp-score").textContent = compWins;
+  document.getElementById("user-score").textContent = user-score;
+  document.getElementById("comp-score").textContent = comp-score;
 }
 
 function checkWinner() {
