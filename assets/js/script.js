@@ -35,9 +35,10 @@ function playGame(userChoice) {
     compImage.alt = options[compChoice];
 
     let result = checkWinner(options[compChoice], options[userChoice]);
-
+    
     updateScore(result);
 }
+
 
 /**
  * Checks to see who the winner is and game logic
