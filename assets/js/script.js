@@ -7,7 +7,7 @@ const userWins = document.getElementById("user-score");
 const compWins = document.getElementById("comp-score");
 const userImage = document.getElementById("user-image");
 const compImage = document.getElementById("comp-image");
-const alert = document.getElementById("alert");
+const message = document.getElementById("alert").innerHTML;
 let options = ["rock", "paper", "scissors", "lizard", "spock"];
 
 
@@ -26,7 +26,7 @@ for (let button of buttons) {
  */
 function playGame(userChoice) {
 
-  userImage.src = ''
+  userImage.src = 'assets/images/${options[userChoice]}.png';
   userImage.alt = options[userChoice];
 
   let compChoice = Math.floor(Math.random() * 5);
@@ -49,10 +49,10 @@ function compareChoices(userChoice, compChoice) {
   if (userChoice === "rock") {
     if (compChoice === "scissors") {
       alert(`You Win!`);
-      userWins.innerHTML++;
+      userWins++;
     } else {
       alert(`You Lose!`);
-      compWins.innerHTML++;
+      compWins++;
     }
   } else if (userChoice === "paper") {
     if (compChoice === "rock") {
@@ -127,17 +127,5 @@ function compareChoices(userChoice, compChoice) {
       compWins++;
     }
   }  
-}
-
-function incrementScore() {
-
-  let oldWins = parseInt(document.getElementById("user-score").innerText);
-  document.getElementById("user-score").innerText = ++oldWins;
-}
-
-function incrementWrongAnswer() {
-
-  let oldWins = parseInt(document.getElementById("comp-score").innerText);
-  document.getElementById("comp-score").innerText = ++oldWins;
 }
 
