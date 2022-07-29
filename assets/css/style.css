@@ -47,6 +47,11 @@ h2 {
     font-size: 1.5rem;
 }
 
+.col-third {
+    width: 33%;
+    display: inline-block;
+}
+
 /* Selection images */
 
 .score-area {
@@ -54,12 +59,10 @@ h2 {
 }
 
 .user {
-    width: 49%;
     float: left;
 }
 
 .computer {
-    width: 49%;
     float: right;
 }
 
@@ -68,8 +71,6 @@ h2 {
     margin-top: 1rem;
 }
 
-/* Footer */
-
-.rules {
-    margin-top: 1rem;
+.rules p {
+    font-size: 1rem;
 }
