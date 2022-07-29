@@ -36,6 +36,10 @@ h2 {
     margin: 0 30px;
 }
 
+.btn--big:hover {
+    color: forestgreen;
+}
+
 /* Selection images */
 
 .score-area {
