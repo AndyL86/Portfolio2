@@ -20,9 +20,9 @@ for (let button of buttons) {
     playGame(userChoice);
     compareChoices(userChoice, compChoice);
 
-    const movesLeft = document.getElementsByClassName('moves');
-				moves++;
-				movesLeft.innerText = `Number of moves remaining: ${10-moves}`;
+    // const movesLeft = document.getElementsByClassName('moves');
+		// 		moves++;
+		// 		movesLeft.innerText = `Number of moves remaining: ${10-moves}`;
 
   });
 }
@@ -50,7 +50,7 @@ function playGame(userChoice) {
  */
 function compareChoices(userChoice, compChoice) {
   if (userChoice === compChoice) {
-    message.innerText = `Match is a Tie!`;
+    message(`Match is a Tie!`);
   }
   if (userChoice === "rock") {
     if (compChoice === "scissors") {
