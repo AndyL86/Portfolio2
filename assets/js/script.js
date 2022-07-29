@@ -7,7 +7,7 @@ const userWins = document.getElementById("user-score");
 const compWins = document.getElementById("comp-score");
 const userImage = document.getElementById("user-image");
 const compImage = document.getElementById("comp-image");
-const message = document.getElementById("alert");
+let message = document.getElementById("alert").innerText;
 let options = ["rock", "paper", "scissors", "lizard", "spock"];
 
 
@@ -50,14 +50,14 @@ function playGame(userChoice) {
  */
 function compareChoices(userChoice, compChoice) {
   if (userChoice === compChoice) {
-    alert(`Match is a Tie!`);
+    message.innerText = `Match is a Tie!`;
   }
   if (userChoice === "rock") {
     if (compChoice === "scissors") {
-      alert(`You Win!`);
+      message(`You Win!`);
       userWins++;
     } else {
-      alert(`You Lose!`);
+      message(`You Lose!`);
       compWins++;
     }
   } else if (userChoice === "paper") {
