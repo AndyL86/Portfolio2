@@ -7,7 +7,7 @@ const userWins = document.getElementById("user-score");
 const compWins = document.getElementById("comp-score");
 const userImage = document.getElementById("user-image");
 const compImage = document.getElementById("comp-image");
-const message = document.getElementById("alert").innerHTML;
+const message = document.getElementById("alert");
 let options = ["rock", "paper", "scissors", "lizard", "spock"];
 
 
@@ -18,6 +18,12 @@ for (let button of buttons) {
   button.addEventListener("click", function () {
     let userChoice = this.getAttribute("data-choice")
     playGame(userChoice);
+    compareChoices(userChoice, compChoice);
+
+    const movesLeft = document.getElementsByClassName('moves');
+				moves++;
+				movesLeft.innerText = `Number of moves remaining: ${10-moves}`;
+
   });
 }
 
