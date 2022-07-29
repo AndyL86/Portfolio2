@@ -11,11 +11,12 @@ body {
 /*  Heading */
 
 header {
-    height: 80px;
+    height: 70px;
 }
 
 h2 {
     font-size: 3rem;
+    margin-top: 1rem;
 }
 
 /*  Button area */
@@ -40,6 +41,12 @@ h2 {
     color: forestgreen;
 }
 
+/* Score area */
+
+.score-area {
+    font-size: 1.5rem;
+}
+
 /* Selection images */
 
 .score-area {
@@ -56,5 +63,13 @@ h2 {
     float: right;
 }
 
+.scores {
+    margin-bottom: -2rem;
+    margin-top: 1rem;
+}
+
 /* Footer */
 
+.rules {
+    margin-top: 1rem;
+}
