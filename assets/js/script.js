@@ -3,12 +3,12 @@
  * and possible choices
  */
 const buttons = document.getElementsByClassName("choice");
-const userWins = document.getElementById("user-score");
-const compWins = document.getElementById("comp-score");
-const userImage = document.getElementById("user-image");
-const compImage = document.getElementById("comp-image");
-let message = document.getElementById("alert").innerText;
-let options = ["rock", "paper", "scissors", "lizard", "spock"];
+var userWins = document.getElementById("user-score");
+var compWins = document.getElementById("comp-score");
+var userImage = document.getElementById("user-image");
+var compImage = document.getElementById("comp-image");
+var message = document.getElementById("alert");
+const options = ["rock", "paper", "scissors", "lizard", "spock"];
 
 
 /**
@@ -16,14 +16,8 @@ let options = ["rock", "paper", "scissors", "lizard", "spock"];
  */
 for (let button of buttons) {
   button.addEventListener("click", function () {
-    let userChoice = this.getAttribute("data-choice")
+    var userChoice = this.getAttribute("data-choice")
     playGame(userChoice);
-    compareChoices(userChoice, compChoice);
-
-    // const movesLeft = document.getElementsByClassName('moves');
-		// 		moves++;
-		// 		movesLeft.innerText = `Number of moves remaining: ${10-moves}`;
-
   });
 }
 
@@ -32,15 +26,14 @@ for (let button of buttons) {
  */
 function playGame(userChoice) {
 
-  userImage.src = 'assets/images/${options[userChoice]}.png';
+  userImage.src = 'assets/${options[userChoice]}.png';
   userImage.alt = options[userChoice];
 
-  let compChoice = Math.floor(Math.random() * 5);
-
+  var compChoice = Math.floor(Math.random() * 5);
   compImage.src = 'assets/images/${options[compChoice]}.png';
   compImage.alt = options[compChoice];
 
-  compareChoices(userChoice, compChoice);
+  compareChoices(userChoice,compChoice);
 
 }
 
@@ -48,90 +41,34 @@ function playGame(userChoice) {
 /**
  * Checks to see who the winner is and game logic
  */
-function compareChoices(userChoice, compChoice) {
+
+ function compareChoices(userChoice,compChoice) {
+
   if (userChoice === compChoice) {
-    message(`Match is a Tie!`);
+    message.innerHTML = "Match is a Tie!";
+  } else if (userChoice === "rock" && compChoice === "scissors") {
+      message.innerHTML = "You Win!";
+  } else if (userChoice === "paper" && compChoice === "rock") {
+      message.innerHTML = "You Win!";
+  } else if (userChoice === "scissors" && compChoice === "paper") {
+      message.innerHTML = "You Win!";
+  } else if (userChoice === "rock" && compChoice === "lizard") {
+      message.innerHTML = "You Win!";
+  } else if (userChoice === "lizard" && compChoice === "spock") {
+      message.innerHTML = "You Win!";
+  } else if (userChoice === "spock" && compChoice === "scissors") {
+      message.innerHTML = "You Win!";
+  } else if (userChoice === "scissors" && compChoice === "lizard") {
+      message.innerHTML = "You Win!";
+  } else if (userChoice === "lizard" && compChoice === "paper") {
+      message.innerHTML = "You Win!";
+  } else if (userChoice === "paper" && compChoice === "spock") {
+      message.innerHTML = "You Win!";
+  } else if (userChoice === "spock" && compChoice === "rock") {
+      message.innerHTML = "You Win!";
+  } else {
+      message.innerHTML = "You Lose!";
   }
-  if (userChoice === "rock") {
-    if (compChoice === "scissors") {
-      message(`You Win!`);
-      userWins++;
-    } else {
-      message(`You Lose!`);
-      compWins++;
-    }
-  } else if (userChoice === "paper") {
-    if (compChoice === "rock") {
-      alert(`You Win!`);
-      userWins++;
-    } else {
-      alert(`You Lose!`);
-      compWins++;
-    }
-  } else if (userChoice === "scissors") {
-    if (compChoice === "paper") {
-      alert(`You Win!`);
-      userWins++;
-    } else {
-      alert(`You Lose!`);
-      compWins++;
-    }
-  } else if (userChoice === "rock") {
-    if (compChoice === "lizard") {
-      alert(`You Win!`);
-      userWins++;
-    } else {
-      alert(`You Lose!`);
-      compWins++;
-    }
-  } else if (userChoice === "lizard") {
-    if (compChoice === "spock") {
-      alert(`You Win!`);
-      userWins++;
-    } else {
-      alert(`You Lose!`);
-      compWins++;
-    }
-  } else if (userChoice === "spock") {
-    if (compChoice === "scissors") {
-      alert(`You Win!`);
-      userWins++;
-    } else {
-      alert(`You Lose!`);
-      compWins++;
-    }
-  } else if (userChoice === "scissors") {
-    if (compChoice === "lizard") {
-      alert(`You Win!`);
-      userWins++;
-    } else {
-      alert(`You Lose!`);
-      compWins++;
-    }
-  } else if (userChoice === "lizard") {
-    if (compChoice === "paper") {
-      alert(`You Win!`);
-      userWins++;
-    } else {
-      alert(`You Lose!`);
-      compWins++;
-    }
-  } else if (userChoice === "paper") {
-    if (compChoice === "spock") {
-      alert(`You Win!`);
-      userWins++;
-    } else {
-      alert(`You Lose!`);
-      compWins++;
-    }
-  } else if (userChoice === "spock") {
-    if (compChoice === "rock") {
-      alert(`You Win!`);
-      userWins++;
-    } else {
-      alert(`You Lose!`);
-      compWins++;
-    }
-  }  
 }
+
 
