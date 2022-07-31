@@ -30,7 +30,7 @@ function playGame(userChoice) {
     userImage.alt = options[userChoice];
 
     var compChoice = Math.floor(Math.random() * 5);
-    //   compImage.src = 'assets/images/${options[compChoice]}.png';
+    compImage.src = 'assets/images/${options[compChoice]}.png';
     compImage.alt = options[compChoice];
 
     compareChoices(userChoice, compChoice);
