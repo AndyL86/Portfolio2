@@ -7,7 +7,7 @@ var userWins = document.getElementById("user-score");
 var compWins = document.getElementById("comp-score");
 var userImage = document.getElementById("user-image");
 var compImage = document.getElementById("comp-image");
-var message = document.getElementById("alert");
+var message = document.querySelector("#alert");
 var options = [];
 
 options[0].push = ('assets/images/rock.png');
