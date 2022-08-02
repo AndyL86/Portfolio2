@@ -32,11 +32,11 @@ for (let button of buttons) {
  */
 function playGame(userChoice) {
 
-    userImage.src = 'options[index]';
+    userImage.src = 'assets/images/${options[userChoice]}.png';
     userImage.alt = options[userChoice];
 
     var compChoice = Math.trunc(Math.random() * 5);
-    compImage.src = 'options[index]';
+    compImage.src = 'assets/images/${options[compChoice]}.png';
     compImage.alt = options[compChoice];
 
     compareChoices(userChoice, compChoice);
