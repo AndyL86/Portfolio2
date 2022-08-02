@@ -29,7 +29,7 @@ function playGame(userChoice) {
     userImage.src = 'assets/${options[userChoice]}.png';
     userImage.alt = options[userChoice];
 
-    var compChoice = Math.floor(Math.random() * 5);
+    var compChoice = Math.trunc(Math.random() * 5);
     compImage.src = 'assets/images/${options[compChoice]}.png';
     compImage.alt = options[compChoice];
 
