@@ -52,25 +52,25 @@ function compareChoices(userChoice, compChoice) {
 
     if (userChoice === compChoice) {
         message.innerHTML = "Match is a Tie!";
-    } else if (userChoice === "rock" && compChoice === "scissors") {
+    } else if (userChoice === options[0] && compChoice === options[2]) {
         message.innerHTML = "You Win!";
-    } else if (userChoice === "paper" && compChoice === "rock") {
+    } else if (userChoice === options[1] && compChoice === options[0]) {
         message.innerHTML = "You Win!";
-    } else if (userChoice === "scissors" && compChoice === "paper") {
+    } else if (userChoice === options[2] && compChoice === options[1]) {
         message.innerHTML = "You Win!";
-    } else if (userChoice === "rock" && compChoice === "lizard") {
+    } else if (userChoice === options[0] && compChoice === options[3]) {
         message.innerHTML = "You Win!";
-    } else if (userChoice === "lizard" && compChoice === "spock") {
+    } else if (userChoice === options[3] && compChoice === options[4]) {
         message.innerHTML = "You Win!";
-    } else if (userChoice === "spock" && compChoice === "scissors") {
+    } else if (userChoice === options[4] && compChoice === options[2]) {
         message.innerHTML = "You Win!";
-    } else if (userChoice === "scissors" && compChoice === "lizard") {
+    } else if (userChoice === options[2] && compChoice === options[3]) {
         message.innerHTML = "You Win!";
-    } else if (userChoice === "lizard" && compChoice === "paper") {
+    } else if (userChoice === options[3] && compChoice === options[1]) {
         message.innerHTML = "You Win!";
-    } else if (userChoice === "paper" && compChoice === "spock") {
+    } else if (userChoice === options[1] && compChoice === options[4]) {
         message.innerHTML = "You Win!";
-    } else if (userChoice === "spock" && compChoice === "rock") {
+    } else if (userChoice === options[4] && compChoice === options[0]) {
         message.innerHTML = "You Win!";
     } else {
         message.innerHTML = "You Lose!";
