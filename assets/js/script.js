@@ -10,11 +10,11 @@ var compImage = document.getElementById("comp-image");
 var message = document.querySelector("#alert");
 var options = [];
 
-options[0].push = ('assets/images/rock.png');
-options[1].push = ('assets/images/paper.png');
-options[2].push = ('assets/images/scissors.png');
-options[3].push = ('assets/images/lizard.png');
-options[4].push = ('assets/images/spock.png');
+options[0].push = 'assets/images/rock.png';
+options[1].push = 'assets/images/paper.png';
+options[2].push = 'assets/images/scissors.png';
+options[3].push = 'assets/images/lizard.png';
+options[4].push = 'assets/images/spock.png';
 
 
 /**
