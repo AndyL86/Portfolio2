@@ -64,10 +64,17 @@ h2 {
 }
 
 .scores {
-    margin-bottom: -2rem;
-    margin-top: 1rem;
+    margin-top: 0;
 }
 
 .rules p {
     font-size: 1rem;
+}
+
+.rules h3 {
+    margin: 0;
+}
+
+#alert {
+    margin: 0;
 }
