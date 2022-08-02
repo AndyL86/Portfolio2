@@ -8,7 +8,13 @@ var compWins = document.getElementById("comp-score");
 var userImage = document.getElementById("user-image");
 var compImage = document.getElementById("comp-image");
 var message = document.getElementById("alert");
-const options = ["rock", "paper", "scissors", "lizard", "spock"];
+var options = [];
+
+options[0].push = ('assets/images/rock.png');
+options[1].push = ('assets/images/paper.png');
+options[2].push = ('assets/images/scissors.png');
+options[3].push = ('assets/images/lizard.png');
+options[4].push = ('assets/images/spock.png');
 
 
 /**
@@ -26,11 +32,11 @@ for (let button of buttons) {
  */
 function playGame(userChoice) {
 
-    userImage.src = 'assets/${options[userChoice]}.png';
+    userImage.src = 'options[index]';
     userImage.alt = options[userChoice];
 
     var compChoice = Math.trunc(Math.random() * 5);
-    compImage.src = 'assets/images/${options[compChoice]}.png';
+    compImage.src = 'options[index]';
     compImage.alt = options[compChoice];
 
     compareChoices(userChoice, compChoice);
