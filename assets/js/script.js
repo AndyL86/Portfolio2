@@ -2,6 +2,8 @@
  * Declare constants for DOM elements
  * and possible choices
  */
+ let computerScore = 1;
+ let playerScore = 1;
  const buttons = document.getElementsByClassName("choice");
  var userWins = document.getElementById("user-score");
  var compWins = document.getElementById("comp-score");
@@ -22,7 +24,7 @@
   */
  for (let button of buttons) {
      button.addEventListener("click", function () {
-         var userChoice = this.getAttribute("data-choice")
+         var userChoice = this.getAttribute("data-choice");
          playGame(userChoice);
      });
  }
@@ -40,8 +42,8 @@
      compImage.src = options[compChoice];
      compImage.alt = options[compChoice];
      
-    //  compareChoices(userChoice, compChoice);
-
+     compareChoices(userChoice, compChoice);
+ }
     //  console.log(userChoice,compChoice);
  
  
@@ -50,34 +52,56 @@
   * Checks to see who the winner is and game logic
   */
  
-//  function compareChoices(userChoice, compChoice) {
+ function compareChoices(userChoice, compChoice) {
      if (userChoice === compChoice) {
          message.innerHTML = "Match is a Tie!";
-     } else if (userChoice === '0' && compChoice === '2') {
+     } else if (userChoice === "0" && compChoice === 2) {
          message.innerHTML = "You Win!";
-     } else if (userChoice === '1' && compChoice === '0') {
+         userWins.innerHTML = playerScore;
+               playerScore++;
+     } else if (userChoice === "1" && compChoice === 0) {
          message.innerHTML = "You Win!";
-     } else if (userChoice === '2' && compChoice === '1') {
+         userWins.innerHTML = playerScore;
+               playerScore++;
+     } else if (userChoice === "2" && compChoice === 1) {
          message.innerHTML = "You Win!";
-     } else if (userChoice === '0' && compChoice === '3') {
+         userWins.innerHTML = playerScore;
+               playerScore++;
+     } else if (userChoice === "0" && compChoice === 3) {
          message.innerHTML = "You Win!";
-     } else if (userChoice === '3' && compChoice === '4') {
+         userWins.innerHTML = playerScore;
+               playerScore++;
+     } else if (userChoice === "3" && compChoice === 4) {
          message.innerHTML = "You Win!";
-     } else if (userChoice === '4' && compChoice === '2') {
+         userWins.innerHTML = playerScore;
+               playerScore++;
+     } else if (userChoice === "4" && compChoice === 2) {
          message.innerHTML = "You Win!";
-     } else if (userChoice === '2' && compChoice === '3') {
+         userWins.innerHTML = playerScore;
+               playerScore++;
+     } else if (userChoice === "2" && compChoice === 3) {
          message.innerHTML = "You Win!";
-     } else if (userChoice === '3' && compChoice === '1') {
+         userWins.innerHTML = playerScore;
+               playerScore++;
+     } else if (userChoice === "3" && compChoice === 1) {
          message.innerHTML = "You Win!";
-     } else if (userChoice === '1' && compChoice === '4') {
+         userWins.innerHTML = playerScore;
+               playerScore++;
+     } else if (userChoice === "1" && compChoice === 4) {
          message.innerHTML = "You Win!";
-     } else if (userChoice === '4' && compChoice === '0') {
+         userWins.innerHTML = playerScore;
+               playerScore++;
+     } else if (userChoice === "4" && compChoice === 0) {
          message.innerHTML = "You Win!";
+         userWins.innerHTML = playerScore;
+               playerScore++;
      } else {
          message.innerHTML = "You Lose!";
+         compWins.innerHTML = computerScore;
+               computerScore++;
      }
      console.log(userChoice,compChoice);
  }
 
 
- playGame(userChoice,compChoice);
+ playGame(userChoice);
