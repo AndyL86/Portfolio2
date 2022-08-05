@@ -9,7 +9,32 @@
  const userImage = document.getElementById("user-image");
  const compImage = document.getElementById("comp-image");
  
- 
+ const hands = [{
+    name: "rock",
+    image: "assets/images/rock.png",
+    beats: ["lizard", "scissors"],
+ },
+ {
+    name: "paper",
+    image: "assets/images/paper.png",
+    beats: ["rock", "spock"],
+ },
+ {
+    name: "scissors",
+    image: "assets/images/scissors.png",
+    beats: ["lizard", "paper"],
+ },
+ {
+    name: "lizard",
+    image: "assets/images/lizard.png",
+    beats: ["paper", "spock"],
+ },
+ {
+    name: "spock",
+    image: "assets/images/spock.png",
+    beats: ["rock", "scissors"],
+ },
+]
  
  let computerScore = 0;
  let playerScore = 0;
