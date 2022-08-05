@@ -52,16 +52,49 @@ h2 {
 .score-area {
     width: 100%;
     font-size: 1.5rem;
+    position: relative;
 }
 
-.col-third {
+.user .computer {
     width: 33%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.computer {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.user {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.rules {
+    width: 33%;
+    /* position: absolute; */
+    /* top: 200px;
+    left: 0; */
+    box-sizing: border-box;
     display: inline-block;
 }
 
+.user .computer .rules {
+    margin: 0;
+    height: 200px;
+}
+
+/* .col-third {
+    width: 33%;
+    display: inline-block;
+} */
+
 /* Selection images */
 
-section .rules {
+/* section .rules {
     display: inline;
 }
 
@@ -71,7 +104,7 @@ section .rules {
 
 .computer {
     float: right;
-}
+} */
 
 .scores {
     margin-top: 0;
@@ -90,7 +123,7 @@ section .rules {
 }
 
 @media screen and (max-width: 800px) {
-    .score-area {
+    /* .score-area {
         display: table;
     }
 
@@ -102,5 +135,18 @@ section .rules {
     section .rules {
         height: auto;
         display: table-footer-group;
+    } */
+    .user, .computer {
+        width: 48%;
+    }
+
+    .rules {
+        width: 100%;
+        /* position: absolute; */
+        padding-top: 15rem;
+    }
+
+    #alert {
+        display: block;
     }
 }
