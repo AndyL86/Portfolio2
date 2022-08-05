@@ -138,7 +138,7 @@ h2 {
     } */
 
     .choice {
-        display: flex;
+        display: inline-block;
     }
 
     .user, .computer {
@@ -153,7 +153,7 @@ h2 {
     }
 
     .scores {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     #alert {
