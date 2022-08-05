@@ -157,11 +157,11 @@ h2 {
     }
 
     .user h3 {
-        margin-right: .5rem;
+        padding-right: .5rem;
     }
 
     .computer h3 {
-        margin-left: .5rem;
+        padding-left: .5rem;
     }
 
     #alert {
