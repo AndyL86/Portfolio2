@@ -64,13 +64,13 @@ h2 {
 .computer {
     position: absolute;
     top: 0;
-    right: 4rem;
+    right: 2rem;
 }
 
 .user {
     position: absolute;
     top: 0;
-    left: 4rem;
+    left: 2rem;
 }
 
 .rules {
@@ -140,7 +140,7 @@ h2 {
     .btn--big {
         margin: 0;
     }
-    
+
     .user, .computer {
         width: 48%;
         height: auto;
