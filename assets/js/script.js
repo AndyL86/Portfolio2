@@ -81,29 +81,29 @@ function compareChoices(userChoice, compChoice) {
         message.innerHTML = "Match is a Tie!";
     } else if (winners.includes(compChoice.name)) {
         message.innerHTML = "You Win!";
-        userWins.innerHTML = playerScore;
         playerScore++;
+        userWins.innerHTML = playerScore;
     } else {
         message.innerHTML = "You Lose!";
-        compWins.innerHTML = computerScore;
         computerScore++;
+        compWins.innerHTML = computerScore;
     }
 
-    if (computerScore === 10) {
+    if (computerScore === 11) {
         Swal.fire({
             position: 'center',
             icon: 'error',
-            title: 'AWWWWWWWWWWWW.... you lost! I bet you are really frustrated about that...',
+            title: 'You Lost! Sucks to be you',
             showConfirmButton: false,
             timer: 3000
         }).then(() => {
             resetGame()
         })
-    } else if (playerScore === 10) {
+    } else if (playerScore === 11) {
         Swal.fire({
             position: 'center',
             icon: 'success',
-            title: 'OOOOOOO... look at that! YOU WON!',
+            title: 'OOOOO... look at that! YOU WON!',
             showConfirmButton: false,
             timer: 3000
         }).then(() => {
