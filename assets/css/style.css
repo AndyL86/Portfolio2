@@ -138,7 +138,7 @@ h2 {
     } */
 
     .game-area {
-        display: inline-block;
+        display: flex;
     }
 
     .user, .computer {
