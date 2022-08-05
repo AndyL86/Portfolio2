@@ -79,12 +79,15 @@ function compareChoices(userChoice, compChoice) {
 
     if (userChoice.name === compChoice.name) {
         message.innerHTML = "Match is a Tie!";
+        message.style.color = 'orange';
     } else if (winners.includes(compChoice.name)) {
         message.innerHTML = "You Win!";
+        message.style.color = '#00C9A7';
         playerScore++;
         userWins.innerHTML = playerScore;
     } else {
         message.innerHTML = "You Lose!";
+        message.style.color = '#D83121'
         computerScore++;
         compWins.innerHTML = computerScore;
     }
