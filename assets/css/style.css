@@ -137,6 +137,10 @@ h2 {
         display: table-footer-group;
     } */
 
+    .btn--big {
+        margin: 0;
+    }
+    
     .user, .computer {
         width: 48%;
         height: auto;
