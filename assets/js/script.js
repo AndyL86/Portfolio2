@@ -2,8 +2,7 @@
  * Declare constants for DOM elements
  * and possible choices
  */
- let computerScore = 1;
- let playerScore = 1;
+
  const buttons = document.getElementsByClassName("choice");
  var userWins = document.getElementById("user-score");
  var compWins = document.getElementById("comp-score");
@@ -104,4 +103,9 @@
  }
 
 
- playGame(userChoice);
+ function resetGame() {
+    computerScore = 0;
+    playerScore = 0;
+    userWins.innerHTML = playerScore;
+    compWins.innerHTML = computerScore;
+ }
