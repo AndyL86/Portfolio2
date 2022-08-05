@@ -82,10 +82,10 @@ function compareChoices(userChoice, compChoice) {
         message.style.color = '#EAA362';
     } else if (winners.includes(compChoice.name)) {
         message.innerHTML = "You Win!";
-        message.style.color = '#59CF61';
+        message.style.color = '#8CDE96';
         playerScore++;
         userWins.innerHTML = playerScore;
-        userWins.style.color = '#59CF61';
+        userWins.style.color = '#8CDE96';
     } else {
         message.innerHTML = "You Lose!";
         message.style.color = '#F99595'
@@ -100,7 +100,7 @@ function compareChoices(userChoice, compChoice) {
             icon: 'error',
             title: 'You Lost! Sucks to be you',
             showConfirmButton: false,
-            timer: 3000
+            timer: 3500
         }).then(() => {
             resetGame()
         })
@@ -110,7 +110,7 @@ function compareChoices(userChoice, compChoice) {
             icon: 'success',
             title: 'OOOOO... look at that! YOU WON!',
             showConfirmButton: false,
-            timer: 3000
+            timer: 3500
         }).then(() => {
             resetGame()
         })
@@ -121,6 +121,8 @@ function compareChoices(userChoice, compChoice) {
 function resetGame() {
     computerScore = 0;
     playerScore = 0;
+    messageReset = '';
     userWins.innerHTML = playerScore;
     compWins.innerHTML = computerScore;
+    message.innerHTML = messageReset;
 }

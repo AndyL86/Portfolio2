@@ -17,7 +17,7 @@ header {
 
 h2 {
     font-size: 2rem;
-    margin: 1rem 0 1rem 0;
+    margin: 0.5rem 0 0.5rem 0;
 }
 
 /*  Button area */
@@ -76,7 +76,7 @@ h2 {
 
 .result {
     width: 20%;
-    display: inline;
+    display: inline-block;
 }
 
 /* .wins-rule {
@@ -107,13 +107,16 @@ h2 {
 
 @media screen and (max-width: 800px) {
 
+    /* .score-area {
+        overflow: hidden;
+    } */
+
     .btn--big {
         margin: 0;
     }
 
-    .user, .computer {
-        width: 48%;
-        height: auto;
+    #alert {
+        width: 20%;
     }
 
     .rules {
