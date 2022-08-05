@@ -136,6 +136,11 @@ h2 {
         height: auto;
         display: table-footer-group;
     } */
+
+    .choice {
+        display: flex;
+    }
+
     .user, .computer {
         width: 48%;
         height: auto;
