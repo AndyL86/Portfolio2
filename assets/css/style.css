@@ -107,9 +107,9 @@ h2 {
 
 @media screen and (max-width: 800px) {
 
-    /* .score-area {
-        overflow: hidden;
-    } */
+    .result {
+        font-size: .5rem;
+    }
 
     .btn--big {
         margin: 0;
