@@ -11,15 +11,21 @@ body {
 /*  Heading */
 
 header {
-    height: 70px;
+    width: 100%;
+    height: auto;
 }
 
 h2 {
     font-size: 3rem;
-    margin-top: 1rem;
+    margin: 1rem 0 1rem 0;
 }
 
 /*  Button area */
+
+.button-area {
+    width: 100%;
+    height: auto;
+}
 
 .choice {
     width: 15%;
@@ -77,4 +83,16 @@ h2 {
 
 #alert {
     margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .user .computer {
+        width: 49%;
+        display: inline;
+    }
+
+    .rules {
+        width: 100%;
+        display: inline-block;
+    }
 }
