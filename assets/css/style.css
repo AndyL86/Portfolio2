@@ -109,21 +109,21 @@ h2 {
 
     .result {
         font-size: .5rem;
+        width: 20%;
+        overflow: hidden;
     }
 
     .btn--big {
         margin: 0;
     }
 
-    #alert {
+    /* #alert {
         width: 20%;
-    }
+    } */
 
     .rules {
         width: 100%;
         height: auto;
-        /* position: absolute; */
-        padding-top: 40%;
     }
 
     .scores {
