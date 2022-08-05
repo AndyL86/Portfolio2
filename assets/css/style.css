@@ -156,6 +156,14 @@ h2 {
         font-size: 1rem;
     }
 
+    .user h3 {
+        margin-right: .5rem;
+    }
+
+    .computer h3 {
+        margin-left: .5rem;
+    }
+
     #alert {
         display: block;
         height: auto;
