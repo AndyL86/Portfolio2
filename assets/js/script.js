@@ -69,6 +69,28 @@ function compareChoices(userChoice, compChoice) {
          compWins.innerHTML = computerScore;
                computerScore++;
  }
+
+ if (computerScore === 10) {
+    Swal.fire({
+        position: 'center',
+        icon: 'error',
+        title: 'AWWWWWWWWWWWW.... you lost! I bet you are really frustrated about that...',
+        showConfirmButton: false,
+        timer: 3000
+    }).then(() => {
+        resetGame()
+    })
+ } else if (playerScore === 10) {
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'OOOOOOO... look at that! YOU WON!',
+        showConfirmButton: false,
+        timer: 3000
+    }).then(() => {
+        resetGame()
+    })
+ }
  }
 
 
