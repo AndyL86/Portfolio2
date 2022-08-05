@@ -64,13 +64,13 @@ h2 {
 .computer {
     position: absolute;
     top: 0;
-    right: 2rem;
+    right: 4rem;
 }
 
 .user {
     position: absolute;
     top: 0;
-    left: 2rem;
+    left: 4rem;
 }
 
 .rules {
@@ -137,7 +137,7 @@ h2 {
         display: table-footer-group;
     } */
 
-    .choice {
+    .game-area {
         display: inline-block;
     }
 
