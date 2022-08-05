@@ -85,14 +85,16 @@ function compareChoices(userChoice, compChoice) {
         message.style.color = '#00C9A7';
         playerScore++;
         userWins.innerHTML = playerScore;
+        userWins.style.color = '#00C9A7';
     } else {
         message.innerHTML = "You Lose!";
         message.style.color = '#D83121'
         computerScore++;
         compWins.innerHTML = computerScore;
+        compWins.style.color = '#D83121';
     }
 
-    if (computerScore === 11) {
+    if (computerScore === 10) {
         Swal.fire({
             position: 'center',
             icon: 'error',
@@ -102,7 +104,7 @@ function compareChoices(userChoice, compChoice) {
         }).then(() => {
             resetGame()
         })
-    } else if (playerScore === 11) {
+    } else if (playerScore === 10) {
         Swal.fire({
             position: 'center',
             icon: 'success',
