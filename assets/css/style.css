@@ -137,10 +137,6 @@ h2 {
         display: table-footer-group;
     } */
 
-    .game-area {
-        display: flex;
-    }
-
     .user, .computer {
         width: 48%;
         height: auto;
