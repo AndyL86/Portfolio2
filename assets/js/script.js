@@ -8,7 +8,7 @@
  var compWins = document.getElementById("comp-score");
  const userImage = document.getElementById("user-image");
  const compImage = document.getElementById("comp-image");
- var message = document.getElementById("alert");
+ 
  var options = [];
  
  options[0] = 'assets/images/rock.png';
@@ -17,6 +17,9 @@
  options[3] = 'assets/images/lizard.png';
  options[4] = 'assets/images/spock.png';
  
+ let computerScore = 0;
+ let playerScore = 0;
+ let message = document.getElementById("alert");
  
  /**
   * Add event listener to buttons
@@ -33,73 +36,39 @@
   */
  function playGame(userChoice) {
  
-     userImage.src = options[userChoice];
-     userImage.alt = options[userChoice];
-    //  var userSel = Array.from(userChoice);
+     userHand = hands.filter((value) => value.name === userChoice)
+     userImage.src = userHand[0].image;
+     userImage.alt = userHand[0].name;
  
      const compChoice = Math.trunc(Math.random() * 5);
+     const compHand = hands[compChoice]
      compImage.src = options[compChoice];
      compImage.alt = options[compChoice];
      
-     compareChoices(userChoice, compChoice);
+     compareChoices(userHand[0], compHand);
  }
-    //  console.log(userChoice,compChoice);
+
  
  
  
  /**
   * Checks to see who the winner is and game logic
   */
- 
- function compareChoices(userChoice, compChoice) {
-     if (userChoice === compChoice) {
-         message.innerHTML = "Match is a Tie!";
-     } else if (userChoice === "0" && compChoice === 2) {
-         message.innerHTML = "You Win!";
+function compareChoices(userChoice, compChoice) {
+
+ let winners = userChoice.beats
+
+ if (userChoice.name === compChoice.name) {
+    message.innerHTML = "Match is a Tie!";
+ } else if (winners.includes(compChoice.name)) {
+    message.innerHTML = "You Win!";
          userWins.innerHTML = playerScore;
                playerScore++;
-     } else if (userChoice === "1" && compChoice === 0) {
-         message.innerHTML = "You Win!";
-         userWins.innerHTML = playerScore;
-               playerScore++;
-     } else if (userChoice === "2" && compChoice === 1) {
-         message.innerHTML = "You Win!";
-         userWins.innerHTML = playerScore;
-               playerScore++;
-     } else if (userChoice === "0" && compChoice === 3) {
-         message.innerHTML = "You Win!";
-         userWins.innerHTML = playerScore;
-               playerScore++;
-     } else if (userChoice === "3" && compChoice === 4) {
-         message.innerHTML = "You Win!";
-         userWins.innerHTML = playerScore;
-               playerScore++;
-     } else if (userChoice === "4" && compChoice === 2) {
-         message.innerHTML = "You Win!";
-         userWins.innerHTML = playerScore;
-               playerScore++;
-     } else if (userChoice === "2" && compChoice === 3) {
-         message.innerHTML = "You Win!";
-         userWins.innerHTML = playerScore;
-               playerScore++;
-     } else if (userChoice === "3" && compChoice === 1) {
-         message.innerHTML = "You Win!";
-         userWins.innerHTML = playerScore;
-               playerScore++;
-     } else if (userChoice === "1" && compChoice === 4) {
-         message.innerHTML = "You Win!";
-         userWins.innerHTML = playerScore;
-               playerScore++;
-     } else if (userChoice === "4" && compChoice === 0) {
-         message.innerHTML = "You Win!";
-         userWins.innerHTML = playerScore;
-               playerScore++;
-     } else {
-         message.innerHTML = "You Lose!";
+ } else {
+    message.innerHTML = "You Lose!";
          compWins.innerHTML = computerScore;
                computerScore++;
-     }
-     console.log(userChoice,compChoice);
+ }
  }
 
 
