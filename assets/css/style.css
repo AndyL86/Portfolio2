@@ -35,7 +35,6 @@ h2 {
 .btn--big {
     padding-top: 10px;
     border-radius: 50%;
-    border-color: black;
     background-color: white;
     border: 10px solid;
     width: 100px;
@@ -48,9 +47,6 @@ h2 {
     color: forestgreen;
 }
 
-i {
-    color: black;
-}
 /* Score area */
 
 .score-area {
@@ -64,6 +60,10 @@ i {
 }
 
 /* Selection images */
+
+section .rules {
+    display: inline;
+}
 
 .user {
     float: left;
@@ -90,12 +90,17 @@ i {
 }
 
 @media screen and (max-width: 800px) {
-    .user .computer {
-        width: 49%;
-        height: auto;
+    .score-area {
+        display: table;
     }
 
-    .rules {
-        height: auto
+    .user .computer {
+        width: 40%;
+        display: table-header-group;
+    }
+
+    section .rules {
+        height: auto;
+        display: table-footer-group;
     }
 }
