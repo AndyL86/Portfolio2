@@ -79,19 +79,19 @@ function compareChoices(userChoice, compChoice) {
 
     if (userChoice.name === compChoice.name) {
         message.innerHTML = "Match is a Tie!";
-        message.style.color = 'orange';
+        message.style.color = '#EAA362';
     } else if (winners.includes(compChoice.name)) {
         message.innerHTML = "You Win!";
-        message.style.color = '#00C9A7';
+        message.style.color = '#59CF61';
         playerScore++;
         userWins.innerHTML = playerScore;
-        userWins.style.color = '#00C9A7';
+        userWins.style.color = '#59CF61';
     } else {
         message.innerHTML = "You Lose!";
-        message.style.color = '#D83121'
+        message.style.color = '#F99595'
         computerScore++;
         compWins.innerHTML = computerScore;
-        compWins.style.color = '#D83121';
+        compWins.style.color = '#F99595';
     }
 
     if (computerScore === 10) {

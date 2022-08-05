@@ -16,6 +16,20 @@
         <h2>Rock, Paper, Scissors, Lizard, Spock</h2>
     </header>
 
+    <section class="score-area">
+        <div class="user col-third">
+            <h3 class="scores">Wins - <span id="user-score">0</span></h3>
+            <img id="user-image" src="assets/images/rock.png" alt="User image">
+        </div>
+        <div class="result">Results - 
+            <span id="alert"></span>
+        </div>
+        <div class="computer col-third">
+            <h3 class="scores">Losses - <span id="comp-score">0</span></h3>
+            <img id="comp-image" src="assets/images/rock.png" alt="Comp image">
+        </div>
+</section>
+
     <section class="game-area">
             <p>Make a selection:</p>
             <div class="button-area">
@@ -31,24 +45,12 @@
                 <i class="fas fa-hand-spock"></i></button>
         </div>
     </section>
-    <div>Results - <span id="alert"></span></div>
-    <section class="score-area">
-            <div class="user col-third">
-                <h3 class="scores">Wins - <span id="user-score">0</span></h3>
-                <img id="user-image" src="assets/images/rock.png" alt="User image">
-            </div>
-            <div class="rules col-third">
-                <h3>Rules of the Game</h3>
-                <p>First to 10 wins</p>
-                <p>Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors,
-                scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it
-                always has, rock crushes scissors.</p>
-            </div>
-            <div class="computer col-third">
-                <h3 class="scores">Losses - <span id="comp-score">0</span></h3>
-                <img id="comp-image" src="assets/images/rock.png" alt="Comp image">
-            </div>
-    </section>
+    <div class="rules col-third">
+        <h3>Rules of the Game</h3>
+        <p>Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors,
+        scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it
+        always has, rock crushes scissors.</p>
+    </div>
     <footer>
         
     </footer>

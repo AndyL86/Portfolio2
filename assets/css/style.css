@@ -1,9 +1,9 @@
 /* Global style */
 
 body {
-    background-color: #008AC4;
+    background-color: #162732;
     font-family: 'Permanent Marker', cursive;
-    color: antiquewhite;
+    color: #F6F5EA;
     text-align: center;
     height: 100%;
 }
@@ -47,67 +47,54 @@ h2 {
     color: forestgreen;
 }
 
+.game-area p {
+    margin: 0;
+}
+
 /* Score area */
 
 .score-area {
     width: 100%;
     font-size: 1.5rem;
     position: relative;
-}
-
-.user .computer {
-    width: 33%;
-    display: inline-block;
-    box-sizing: border-box;
-}
-
-.computer {
-    position: absolute;
-    top: 0;
-    right: 2rem;
+    overflow: hidden;
 }
 
 .user {
-    position: absolute;
-    top: 0;
-    left: 2rem;
-}
-
-.rules {
-    width: 33%;
-    /* position: absolute; */
-    /* top: 200px;
-    left: 0; */
+    width: 32%;
+    height: auto;
     box-sizing: border-box;
-    display: inline-block;
-}
-
-.user .computer .rules {
-    margin: 0;
-    height: 200px;
-}
-
-/* .col-third {
-    width: 33%;
-    display: inline-block;
-} */
-
-/* Selection images */
-
-/* section .rules {
-    display: inline;
-}
-
-.user {
     float: left;
 }
 
 .computer {
+    width: 32%;
+    height: auto;
+    box-sizing: border-box;
     float: right;
+}
+
+.result {
+    width: 20%;
+    display: inline;
+}
+
+/* .wins-rule {
+    width: 20%;
+    display: inline;
 } */
+
 
 .scores {
     margin-top: 0;
+}
+
+/* rules area */
+
+.rules {
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
 }
 
 .rules p {
@@ -118,24 +105,7 @@ h2 {
     margin: 0;
 }
 
-#alert {
-    margin: 0;
-}
-
 @media screen and (max-width: 800px) {
-    /* .score-area {
-        display: table;
-    }
-
-    .user .computer {
-        width: 40%;
-        display: table-header-group;
-    }
-
-    section .rules {
-        height: auto;
-        display: table-footer-group;
-    } */
 
     .btn--big {
         margin: 0;
@@ -148,6 +118,7 @@ h2 {
 
     .rules {
         width: 100%;
+        height: auto;
         /* position: absolute; */
         padding-top: 40%;
     }
@@ -162,11 +133,6 @@ h2 {
 
     .computer h3 {
         padding-left: .5rem;
-    }
-
-    #alert {
-        display: block;
-        height: auto;
     }
 
     button {
