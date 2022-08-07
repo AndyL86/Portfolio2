@@ -43,7 +43,7 @@ h2 {
     margin: 0 30px;
 }
 
-.btn--big:hover {
+.btn-style:hover {
     color: forestgreen;
 }
 
@@ -79,12 +79,6 @@ h2 {
     display: inline-block;
 }
 
-/* .wins-rule {
-    width: 20%;
-    display: inline;
-} */
-
-
 .scores {
     margin-top: 0;
 }
@@ -116,10 +110,6 @@ h2 {
     .btn--big {
         margin: 0;
     }
-
-    /* #alert {
-        width: 20%;
-    } */
 
     .rules {
         width: 100%;

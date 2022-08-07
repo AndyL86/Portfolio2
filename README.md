@@ -27,24 +27,23 @@ This section give detailed descriptions of each part of the Large Explosion Idea
 - __The Game Area__
 
   - This section allows the user to play the RPSLS game. The user is clearly able to see the selection icons for Rock, Paper, Scissors, Lizard and Spock as represented by 'hand' silhouette icons.
-  - The user is able to select the choice for that round of the game by clicking 1 of the five icons in the 'Make a selection:' section of the game area. 
+  - The user is able to select the choice for that round of the game by clicking 1 of the 5 icons in the 'Make a selection:' section of the game area. 
 
-![Game](media/love_maths_icons.png)
+![Game](assets/images/selection-area.png)
 
-- __The Question section__
+- __The Rules section__
 
-  - The question section is where the user will be able to see the elementary arithmetic question to answer as part of the game. The user will be able answer the questions in the answer box provide
-  - The user will be able to submit their answer and a pop-up will make it known to the user if they answered correctly. 
+  - The rules section tells the user how the match winner is decided, First to 10 wins, and details how each round can be won based on the chosen icon written in a way that is easy for the user to understand. 
 
-![Question](media/love_maths_question.png)
+![Rules](assets/images/rules.png)
 
-For some/all of your features, you may choose to reference the specific project files that implement them.
+<!-- For some/all of your features, you may choose to reference the specific project files that implement them.
 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ### Features Left to Implement
 
-- Another feature idea
+- Another feature idea -->
 
 ## Testing 
 
@@ -60,9 +59,11 @@ If this section grows too long, you may want to split it off into a separate fil
 ### Validator Testing 
 
 - HTML
-    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-maths%2F)
-- CSS
-    - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-maths%252F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/#textarea)
+ ![Valid HTML](assets/images/html-valid.png)
+- CSS ![Valid CSS logo](http://jigsaw.w3.org/css-validator/images/vcss)
+    - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator)
+ ![Valid CSS](assets/images/css-valid.png)
 - JavaScript
     - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
       - The following metrics were returned: 

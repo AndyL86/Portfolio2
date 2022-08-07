@@ -34,7 +34,7 @@ const hands = [{
         image: "assets/images/spock.png",
         beats: ["rock", "scissors"],
     },
-]
+];
 
 let computerScore = 0;
 let playerScore = 0;
@@ -55,12 +55,12 @@ for (let button of buttons) {
  */
 function playGame(userChoice) {
 
-    userHand = hands.filter((value) => value.name === userChoice)
+    const userHand = hands.filter((value) => value.name === userChoice);
     userImage.src = userHand[0].image;
     userImage.alt = userHand[0].name;
 
     const compChoice = Math.trunc(Math.random() * 5);
-    const compHand = hands[compChoice]
+    const compHand = hands[compChoice];
     compImage.src = compHand.image;
     compImage.alt = compHand.name;
 
@@ -75,7 +75,7 @@ function playGame(userChoice) {
  */
 function compareChoices(userChoice, compChoice) {
 
-    let winners = userChoice.beats
+    let winners = userChoice.beats;
 
     if (userChoice.name === compChoice.name) {
         message.innerHTML = "Match is a Tie!";
@@ -88,7 +88,7 @@ function compareChoices(userChoice, compChoice) {
         userWins.style.color = '#8CDE96';
     } else {
         message.innerHTML = "You Lose!";
-        message.style.color = '#F99595'
+        message.style.color = '#F99595';
         computerScore++;
         compWins.innerHTML = computerScore;
         compWins.style.color = '#F99595';
@@ -102,8 +102,8 @@ function compareChoices(userChoice, compChoice) {
             showConfirmButton: false,
             timer: 3500
         }).then(() => {
-            resetGame()
-        })
+            resetGame();
+        });
     } else if (playerScore === 10) {
         Swal.fire({
             position: 'center',
@@ -112,16 +112,16 @@ function compareChoices(userChoice, compChoice) {
             showConfirmButton: false,
             timer: 3500
         }).then(() => {
-            resetGame()
-        })
+            resetGame();
+        });
     }
 }
 
 
 function resetGame() {
-    computerScore = 0;
-    playerScore = 0;
-    messageReset = '';
+    let computerScore = 0;
+    let playerScore = 0;
+    let messageReset = '';
     userWins.innerHTML = playerScore;
     compWins.innerHTML = computerScore;
     message.innerHTML = messageReset;
