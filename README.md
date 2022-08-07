@@ -1,8 +1,8 @@
 # Large Explosion Idea - Rock, Paper, Scissors, Lizard, Spock Game
 
-'Large Explosion Idea - Rock, Paper, Scissors, Lizard, Spock' is a game designed to demonstrate how Javascript can be easily utilised for a variety of requirements when building a website. The site is targeted towards fans of web based games and the popular tv series 'The Big Bang Theory' as well as fellow developers looking to understand alternative Javascript concepts. 
+'Large Explosion Idea - Rock, Paper, Scissors, Lizard, Spock' (RPSLS) is a game designed to demonstrate how Javascript can be easily utilised for a variety of requirements when building a website. The site is targeted towards fans of web based games and the popular tv series 'The Big Bang Theory' as well as fellow developers looking to understand alternative Javascript concepts. 
 
-Large Explosion Idea - RPSLS is a fully responsive interactive game that asks users to choose one of the 5 options (Rock, Paper, Scissors, Lizard, Spock) and in turn generates a random computer choice, the first player to reach a score of 10 wins the match.
+Large Explosion Idea - RPSLS is a fully responsive interactive game that asks users to choose one of the 5 options (Rock, Paper, Scissors, Lizard, Spock) and in turn generates a random computer choice in response, the first player to reach a score of 10 wins the match.
 
 ![Responsive image](assets/images/responsive.png)
 
@@ -14,14 +14,20 @@ This section give detailed descriptions of each part of the Large Explosion Idea
 
 - __The Large Explosion Idea Heading__
 
-  - Featured at the top of the page, the Large Explosion Idea heading is clearly readable to the user. Upon viewing the page, the user will be able to see the name of the game 'Rock, Paper, Scissors, Lizard, Spock'.
+  - Featured at the top of the page, the Large Explosion Idea heading is clearly readable to the user. Upon viewing the page, the user will be able to see the name of the game 'Rock, Paper, Scissors, Lizard, Spock Game'.
 
 ![Logo](assets/images/rpsls%20heading.png)
 
+- __The Score Area__
+
+  - This section is located directly below the heading and allows the user to see a more detailed image of the selection they have played, the number of wins and losses in that match and the result declaration for each round. 
+
+![score](assets/images/score-area.png)
+
 - __The Game Area__
 
-  - This section will allow the user to play the maths game. The user will be able to easily see icons for addition,  subtraction, multiplication, and division games.
-  - The user will be able to select the type of maths game they will be playing by clicking on the different icons. 
+  - This section allows the user to play the RPSLS game. The user is clearly able to see the selection icons for Rock, Paper, Scissors, Lizard and Spock as represented by 'hand' silhouette icons.
+  - The user is able to select the choice for that round of the game by clicking 1 of the five icons in the 'Make a selection:' section of the game area. 
 
 ![Game](media/love_maths_icons.png)
 
@@ -31,12 +37,6 @@ This section give detailed descriptions of each part of the Large Explosion Idea
   - The user will be able to submit their answer and a pop-up will make it known to the user if they answered correctly. 
 
 ![Question](media/love_maths_question.png)
-
-- __The Score Area__
-
-  - This section will allow the user to see exactly how many correct and incorrect answers they have provided. 
-
-![score](media/love_maths_answer.png)
 
 For some/all of your features, you may choose to reference the specific project files that implement them.
 
