@@ -1,4 +1,4 @@
-# Large Explosion Idea - Rock, Paper, Scissors, Lizard, Spock Game
+# **Large Explosion Idea - Rock, Paper, Scissors, Lizard, Spock Game**
 
 'Large Explosion Idea - Rock, Paper, Scissors, Lizard, Spock' (RPSLS) is a game designed to demonstrate how Javascript can be easily utilised for a variety of requirements when building a website. The site is targeted towards fans of web based games and the popular tv series 'The Big Bang Theory' as well as fellow developers looking to understand alternative Javascript concepts. 
 
@@ -6,7 +6,7 @@ Large Explosion Idea - RPSLS is a fully responsive interactive game that asks us
 
 ![Responsive image](docs/read-me/responsive.png)
 
-## Table of contents
+## **Table of contents**
 1. [Planning Stage](#planning-stage)
 1. [Features](#features)
 1. [Testing](#testing)
@@ -14,66 +14,75 @@ Large Explosion Idea - RPSLS is a fully responsive interactive game that asks us
 1. [Technology Used](#technology-used)
 1. [Credits](#credits)
 
-## Planning Stage
+## **Planning Stage**
 
-### User Experience UX
+### **User Experience UX**
 - As a user, I want to access a fun, easy to use game
 - As a user, I want clearly readable instructions on how the game works
 - As a user, I want the game selections icons to be clearly visible
 - As a user, I want to easily understand who the winner of each round and match is
 
-### Site Owner’s Aims
+### **Site Owner’s Aims**
 - As the owner, I want to present a simple to use, fun web-based game
 - As the owner, I want to educate the user on how to play Rock, Paper, Scissors, Lizard, Spock
 - As the owner, I want to provide a simple score tracking function which declares a match winner when a player reaches 10 round wins
 - As the owner, I want to introduce the user to Javascript programming concepts
 
-### Colour Scheme
+### **Colour Scheme**
 I chose a dark colour scheme for the game website design to give a sense of calming to the user to help promote a positive user experience. I opted for a dark Blue (#162732) for the site background and a plain off-white (#F6F5EA) for the text colour to prevent any colour contrast ratio issues. I used(https://webaim.org/resources/contrastchecker/) to check the contrasting colours worked well.
  - Main background
 
  ![Main Background colour scheme](docs/read-me/contrast-checker.png)
 
 
-## Features 
+## **Features** 
 
-This section give detailed descriptions of each part of the Large Explosion Idea game and explain the value that each feature provides to the user and how this is acheived.
+This section gives detailed descriptions of each part of the Large Explosion Idea game and explain the value that each feature provides to the user and how this is acheived.
 
-### Existing Features
+### **Existing Features**
 
 - __The Large Explosion Idea Heading__
 
-  - Featured at the top of the page, the Large Explosion Idea heading is clearly readable to the user. Upon viewing the page, the user will be able to see the name of the game 'Rock, Paper, Scissors, Lizard, Spock Game'.
+  - Featured at the top of the page, the Large Explosion Idea heading is clearly readable to the user. Upon viewing the page, the user will be able to see the name of the game 'Rock, Paper, Scissors, Lizard, Spock Game'. This design was chosen to make the intention of the site clear to anyone who visits it.
 
 ![Logo](docs/read-me/rpsls%20heading.png)
 
 - __The Score Area__
 
-  - This section is located directly below the heading and allows the user to see a more detailed image of the selection they have played, the number of wins and losses in that match and the result declaration for each round. 
+  - This section is located directly below the heading and allows the user to see a more detailed image of the selection they have played, the number of wins and losses in that match and the result declaration for each round. I chose this layout design as the selection image, round scores and result are the main focal points of the game.
 
 ![score](docs/read-me/score-area.png)
 
 - __The Game Area__
 
-  - This section allows the user to play the RPSLS game. The user is clearly able to see the selection icons for Rock, Paper, Scissors, Lizard and Spock as represented by 'hand' silhouette icons.
+  - This section allows the user to play the RPSLS game. The user is clearly able to see the selection icons for Rock, Paper, Scissors, Lizard and Spock as represented by 'hand' silhouette icons, this makes it clear to the user which option they are selecting without the need for text, keeping a cleaner look to the site.
   - The user is able to select the choice for that round of the game by clicking 1 of the 5 icons in the 'Make a selection:' section of the game area. 
 
 ![Game](docs/read-me/selection-area.png)
 
 - __The Rules section__
 
-  - The rules section tells the user how the match winner is decided, First to 10 wins, and details how each round can be won based on the chosen icon written in a way that is easy for the user to understand. 
+  - The rules section tells the user how the match winner is decided, First to 10 wins, and details how each round can be won based on the chosen icon written in a way that is easy for the user to understand. This layout was chosen as to keep the rules clearly visible but not distract the user from the main focal point of the site, which is the game area.
 
 ![Rules](docs/read-me/rules.png)
 
-<!-- 
-### Features Left to Implement
 
-- Another feature idea --> -->
+### **Features Left to Implement**
+The Large Explosion Idea - RPSLS site is currently at the minimum viable product stage. Future features to be added to increase site usability include:
+- A match wins feature and scoreboard function which allows users to register their number of match wins
 
-## Testing 
+## **Testing** 
 
 I have tested the site in the Chrome, Firefox and Edge browsers, using dev tools to test responsiveness. I have also asked users to review on various mobiles devices; both Android and IOS had no issues fed back.
+
+### **Functionality test**
+Extensive functionality tests were carried out throughout the development and deployment process in order to identify any bugs that may occur during gameplay. 
+```
+- Implementation: 
+- Test:
+- Result:
+- Verdict:
+```
 
 ### **Responsiveness**
 ![responsive design picture](docs/read-me/responsive.png)
@@ -101,7 +110,7 @@ All pages have been tested with lighthouse for both mobile and desktop devices w
 
 ![desktop_lighthouse](docs/read-me/lighthouse-desktop.png)
 
-### Validator Testing 
+### **Validator Testing** 
 
 - HTML
     - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/#textarea)
@@ -116,25 +125,31 @@ All pages have been tested with lighthouse for both mobile and desktop devices w
       - Function with the largest signature takes 2 arguments, while the median is 0.
       - Largest function has 17 statements in it, while the median is 2.
       - The most complex function has a cyclomatic complexity value of 5 while the median is 1.
-    - Although there were no errors when running through the JSHint validator, there were 23 warnings consisting of:
-      - 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-      - 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-      - 'for of' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+    - Although there were no errors when running through the JSHint validator, there was 1 warning consisting of:
       - Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (playGame)
-      - 'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
-    - The Jshint checker also picked up on 1 undefined variable 'Swal', however, this coding is intentional as this was sourced from an external site (referenced below).
 
-### Bugs/Fixes and Unfixed Bugs
-
--Initially, I encountered a bug with my if/else statements due to my user choice being a 'data-choice' number and my computer choice being a number randomly generated.
-Once this issue was resolved I noticed it was going to be tricky to compare these values for any 'Match ties'. I eventually decided to change my if/else statement to a more
-efficient code in which both values were compared using string name values. This allowed me to run the comparison without any issues.
--I also had an issue with my images for the user and computer choice displaying a broken link, this was because I was referencing directly from the sources folder. Once I changed
-this code to reference from my options variable I was able to display the image which referenced the user or computer's selection.
--During the testing phase I came across a problem with the CCS style applied to the button icons not being invoked on apple IOS products. This styling would only
-work on windows Desktops or Android products.
-
-## Deployment
+### **Bugs/Fixes and Unfixed Bugs**
+```
+- Problem: Initial If/else statement not working.
+- Cause: Comparisons were strings for the user and integers for the computer.
+- Resolution: Opted for a simpler if/else statement where both user and computer choices are referenced from the 'data-choice' string which greatly improved the code functionality.
+```
+```
+- Problem: Selection images showing a broken link.
+- Cause: Used file directory path.
+- Resolution: Changed code to variable index reference based on choice made.
+```
+```
+- Problem: Score counter would not reset at the end of the match.
+- Cause: Added Let variable to resetGame function.
+- Resolution: Removed Let variable as this was previously declared in the code.
+```
+```
+- Problem: Score counter not increasing until next selection was clicked.
+- Cause: Score increment code in the wrong place.
+- Resolution: Moved score increment above innerHTML score code.
+```
+## **Deployment**
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
   - In the GitHub repository 'Portfolio2', navigate to the Settings tab above the green Gitpod button
@@ -145,12 +160,12 @@ work on windows Desktops or Android products.
 The live link can be found here - [Large Explosion Idea - Rock, Paper, Scissors, Lizard, Spock Game](https://andyl86.github.io/Portfolio2/)
 
 
-## Technology Used
+## **Technology Used**
 Large Explosion Idea - RPSLS was built using HTML5, CSS3 and Javascript
 
-## Credits
+## **Credits**
 
-### Content
+### **Content**
 - Font was sourced from Google Fonts (https://fonts.google.com/)
 - Color schemes were sourced through Colorspace (https://mycolor.space/)
 - Some similarities to the Code Institues Love Maths project may occur throughout the code, although I have implented my own variations to this code 
@@ -158,9 +173,9 @@ Large Explosion Idea - RPSLS was built using HTML5, CSS3 and Javascript
 - Icons used are from Font Awesome (https://fontawesome.com/)
 - Coding for the match winner pop up window was sourced from Sweetalert (https://sweetalert2.github.io/)
 
-### Media
+### **Media**
 - The game selection images were sourced from (https://steamcommunity.com)
 
-### Thanks
+### **Thanks**
  - Richard Wells (https://github.com/D0nni387) - Code Institute mentor, without his patience and support I would not have been able to complete my project to a standard that I am happy with
  
