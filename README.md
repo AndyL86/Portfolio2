@@ -6,6 +6,35 @@ Large Explosion Idea - RPSLS is a fully responsive interactive game that asks us
 
 ![Responsive image](docs/read-me/responsive.png)
 
+## Table of contents
+1. [Planning Stage](#planning-stage)
+1. [Features](#features)
+1. [Testing](#testing)
+1. [Bugs/Fixes and Unfixed Bugs](#bugs/fixes-and-unfixed-bugs)
+1. [Deployment](#deployment)
+1. [Technology Used](#technology-used)
+1. [Credits](#credits)
+
+## Planning Stage
+
+### User Experience UX
+- As a user, I want to access a fun, easy to use game
+- As a user, I want clearly readable instructions on how the game works
+- As a user, I want the game selections icons to be clearly visible
+- As a user, I want to easily understand who the winner of each round and match is
+
+### Site Owner’s Aims
+- As the owner, I want to present a simple to use, fun web-based game
+- As the owner, I want to educate the user on how to play Rock, Paper, Scissors, Lizard, Spock
+- As the owner, I want to provide a simple score tracking function which declares a match winner when a player reaches 10 round wins
+- As the owner, I want to introduce the user to Javascript programming concepts
+
+### Colour Scheme
+I chose a dark colour scheme for the game website design to give a sense of calming to the user to help promote a positive user experience. I opted for a dark Blue (#162732) for the site background and a plain off-white (#F6F5EA) for the text colour to prevent any colour contrast ratio issues. I used(https://webaim.org/resources/contrastchecker/) to check the contrasting colours worked well.
+ - Main background
+ ![Main Background colour scheme](docs/read-me/contrast-checker.png)
+
+
 ## Features 
 
 This section give detailed descriptions of each part of the Large Explosion Idea game and explain the value that each feature provides to the user and how this is acheived.
@@ -115,27 +144,22 @@ icon styling not working on iphone (ongoing)
 The live link can be found here - [Large Explosion Idea - Rock, Paper, Scissors, Lizard, Spock Game](https://andyl86.github.io/Portfolio2/)
 
 
-## Credits 
-<!-- 
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
+## Technology Used
+Large Explosion Idea - RPSLS was built using HTML5, CSS3 and Javascript
 
-You can break the credits section up into Content and Media, depending on what you have included in your project.  -->
+## Credits
 
-fontawesome for icons
-google fonts for text
-colorspace for colour pallette
-sweetalert for win/lose pop up code (Swal variable)
-
-### Content 
-
-<!-- - The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/) -->
+### Content
+- Font was sourced from Google Fonts (https://fonts.google.com/)
+- Color schemes were sourced through Colorspace (https://mycolor.space/)
+- Some similarities to the Code Institues Love Maths project may occur throughout the code, although I have implented my own variations to this code 
+- W3C was used for various problem solving and coding research (https://w3.org)
+- Icons used are from Font Awesome (https://fontawesome.com/)
+- Coding for the match winner pop up window was sourced from Sweetalert (https://sweetalert2.github.io/)
 
 ### Media
+- The game selection images were sourced from (https://steamcommunity.com)
 
-<!-- - The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
-
-
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer!  --> 
+### Thanks
+ - Richard Wells (https://github.com/D0nni387) - Code Institute mentor, without his patience and support I would not have been able to complete my project to a standard that I am happy with
+ 
