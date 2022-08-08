@@ -10,7 +10,6 @@ Large Explosion Idea - RPSLS is a fully responsive interactive game that asks us
 1. [Planning Stage](#planning-stage)
 1. [Features](#features)
 1. [Testing](#testing)
-1. [Bugs/Fixes and Unfixed Bugs](#bugs/fixes-and-unfixed-bugs)
 1. [Deployment](#deployment)
 1. [Technology Used](#technology-used)
 1. [Credits](#credits)
@@ -32,6 +31,7 @@ Large Explosion Idea - RPSLS is a fully responsive interactive game that asks us
 ### Colour Scheme
 I chose a dark colour scheme for the game website design to give a sense of calming to the user to help promote a positive user experience. I opted for a dark Blue (#162732) for the site background and a plain off-white (#F6F5EA) for the text colour to prevent any colour contrast ratio issues. I used(https://webaim.org/resources/contrastchecker/) to check the contrasting colours worked well.
  - Main background
+
  ![Main Background colour scheme](docs/read-me/contrast-checker.png)
 
 
