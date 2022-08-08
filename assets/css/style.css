@@ -99,6 +99,7 @@ h2 {
     margin: 0;
 }
 
+/* Media query for tablets/phones */
 @media screen and (max-width: 800px) {
 
     .result {

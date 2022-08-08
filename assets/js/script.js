@@ -119,10 +119,9 @@ function compareChoices(userChoice, compChoice) {
 
 
 function resetGame() {
-    let computerScore = 0;
-    let playerScore = 0;
-    let messageReset = '';
+    computerScore = 0;
+    playerScore = 0;
     userWins.innerHTML = playerScore;
     compWins.innerHTML = computerScore;
-    message.innerHTML = messageReset;
+    message.innerHTML = '';
 }
