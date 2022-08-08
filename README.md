@@ -66,13 +66,10 @@ This section give detailed descriptions of each part of the Large Explosion Idea
 
 ![Rules](docs/read-me/rules.png)
 
-<!-- For some/all of your features, you may choose to reference the specific project files that implement them.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
+<!-- 
 ### Features Left to Implement
 
-- Another feature idea -->
+- Another feature idea --> -->
 
 ## Testing 
 
@@ -129,9 +126,13 @@ All pages have been tested with lighthouse for both mobile and desktop devices w
 
 ### Bugs/Fixes and Unfixed Bugs
 
-counter not increasing until next icon clicked - fix, moved playerScore to about innerHTML
-images not loading on selection - fix, src needed to be options[compChoice]
-icon styling not working on iphone (ongoing)
+-Initially, I encountered a bug with my if/else statements due to my user choice being a 'data-choice' number and my computer choice being a number randomly generated.
+Once this issue was resolved I noticed it was going to be tricky to compare these values for any 'Match ties'. I eventually decided to change my if/else statement to a more
+efficient code in which both values were compared using string name values. This allowed me to run the comparison without any issues.
+-I also had an issue with my images for the user and computer choice displaying a broken link, this was because I was referencing directly from the sources folder. Once I changed
+this code to reference from my options variable I was able to display the image which referenced the user or computer's selection.
+-During the testing phase I came across a problem with the CCS style applied to the button icons not being invoked on apple IOS products. This styling would only
+work on windows Desktops or Android products.
 
 ## Deployment
 
