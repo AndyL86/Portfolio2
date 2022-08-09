@@ -8,7 +8,9 @@ const userWins = document.getElementById("user-score");
 const compWins = document.getElementById("comp-score");
 const userImage = document.getElementById("user-image");
 const compImage = document.getElementById("comp-image");
-
+/**
+ * Selection images and winner logic
+ */
 const hands = [{
         name: "rock",
         image: "assets/images/rock.png",
@@ -67,9 +69,6 @@ function playGame(userChoice) {
     compareChoices(userHand[0], compHand);
 }
 
-
-
-
 /**
  * Checks to see who the winner is and game logic
  */
@@ -93,7 +92,9 @@ function compareChoices(userChoice, compChoice) {
         compWins.innerHTML = computerScore;
         compWins.style.color = '#F99595';
     }
-
+/**
+ * Match result pop up
+ */
     if (computerScore === 10) {
         Swal.fire({
             position: 'center',
@@ -117,7 +118,9 @@ function compareChoices(userChoice, compChoice) {
     }
 }
 
-
+/**
+ * Resets scores and result text
+ */
 function resetGame() {
     computerScore = 0;
     playerScore = 0;
