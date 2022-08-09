@@ -16,6 +16,10 @@ Large Explosion Idea - RPSLS is a fully responsive interactive game that asks us
 
 ## **Planning Stage**
 
+### **Wireframe**
+As part of my initial planning stage I drew out a basic wireframe of how I wanted the layout of my game to look. Unfortunately this was not used on the finished site as it did not provide the user with a satisfying experience due to spacing issues for the icons and images.
+![Wireframe](docs/read-me/wireframe.jpg)
+
 ### **User Experience UX**
 - As a user, I want to access a fun, easy to use game
 - As a user, I want clearly readable instructions on how the game works
@@ -78,10 +82,10 @@ I have tested the site in the Chrome, Firefox and Edge browsers, using dev tools
 ### **Functionality test**
 Extensive functionality tests were carried out throughout the development and deployment process in order to identify any bugs that may occur during gameplay. 
 ```
-- Implementation: 
-- Test:
-- Result:
-- Verdict:
+- Implementation: To ensure the user understands the purpose of the page and functionality of the game.
+- Test: This test will be carried out by asking my peers and colleagues to play the game ensuring rapid clicking of the icon selection buttons and playing the game multiple times in rapid succession.
+- Result: The game was thoroughly tested and the results were positive, at no point did the users break the game or misunderstand the concept.
+- Verdict: This test passed.
 ```
 
 ### **Responsiveness**
