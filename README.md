@@ -2,7 +2,7 @@
 
 'Large Explosion Idea - Rock, Paper, Scissors, Lizard, Spock' (RPSLS) is a game designed to demonstrate how Javascript can be easily utilised for a variety of requirements when building a website. The site is targeted towards fans of web based games and the popular tv series 'The Big Bang Theory' as well as fellow developers looking to understand alternative Javascript concepts. 
 
-Large Explosion Idea - RPSLS is a fully responsive interactive game that asks users to choose one of the 5 options (Rock, Paper, Scissors, Lizard, Spock) and in turn generates a random computer choice in response, the first player to reach a score of 10 wins the match.
+Large Explosion Idea - RPSLS is a fully responsive interactive game that asks users to choose one of the 5 options (Rock, Paper, Scissors, Lizard, Spock) and in turn generates a random computer choice in response, a result is displayed to declare Win, Lose or Tie and the first player to reach a score of 10 wins the match.
 
 ![Responsive image](docs/read-me/responsive.png)
 
@@ -81,12 +81,20 @@ I have tested the site in the Chrome, Firefox and Edge browsers, using dev tools
 
 ### **Functionality test**
 Extensive functionality tests were carried out throughout the development and deployment process in order to identify any bugs that may occur during gameplay. 
-```
-- Implementation: To ensure the user understands the purpose of the page and functionality of the game.
-- Test: This test will be carried out by asking my peers and colleagues to play the game ensuring rapid clicking of the icon selection buttons and playing the game multiple times in rapid succession.
-- Result: The game was thoroughly tested and the results were positive, at no point did the users break the game or misunderstand the concept.
-- Verdict: This test passed.
-```
+
+#### **Implementation**:  
+To ensure the user understands the purpose of the page and the functionality of the game.
+#### **Test**:  
+This test will be carried out by myself and by asking my peers and colleagues to play the game ensuring rapid clicking of the icon selection buttons and playing the game multiple times in rapid succession. 
+#### **Did the buttons function correctly?**  
+At the start of a new game the page is displaying the correct default image and score. When one of the selection icons is clicked, the correct selection choice image is displayed in the user game area. 
+#### **Did the game play correctly?**  
+The computer successfully generates a choice in response to a user selection and the correct game outcome is declared depending on the images displayed. The score counter responds correctly to the round outcome and when a score of 10 is reached an alert pops up to declare the winner of the match.
+#### **Can the game be reset successfully?**  
+When a score of 10 is reached an alert windows pops up for 3 seconds, when the alert window disappears the game successfully resets the scores back to 0 and displays the correct default image.
+#### **Verdict:**  
+This test passed with no issues on multiple devices.
+
 
 ### **Responsiveness**
 ![responsive design picture](docs/read-me/responsive.png)
